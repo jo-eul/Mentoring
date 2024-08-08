@@ -4,10 +4,11 @@ import com.example.demo.week1.domain.user.dto.SignUpRequest;
 import com.example.demo.week1.domain.user.service.UserSignUpService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RequiredArgsConstructor
-@RequestMapping("/user")
+@RequestMapping("/users")
 @RestController
 public class UserController {
 

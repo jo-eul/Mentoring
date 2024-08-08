@@ -20,14 +20,16 @@ public class User {
     private String password;
 
     @Builder
-    public User(String name, String password){
-        this.name=name;
-        this.password=password;
+    public User(String name, String password) {
+        this.name = name;
+        this.password = password;
     }
-    public void update(String name){
-        this.name=name;
+
+    public void update(String name) {
+        this.name = name;
     }
-    public void ChangePassword(String password){
-        this.password=password;
+
+    public void ChangePassword(String password) {
+        this.password = password;
     }
 }
