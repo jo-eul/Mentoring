@@ -19,11 +19,16 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Column(nullable = false)
+    private String role;
+
     @Builder
-    public User(String name, String password) {
+    public User(String name, String password,String role) {
         this.name = name;
         this.password = password;
+        this.role=role;
     }
+
 
     public void update(String name) {
         this.name = name;
