@@ -1,4 +1,4 @@
-package com.example.demo.week1.global.error.entity;
+package com.example.demo.week1.global.entity;
 
 import com.example.demo.week1.global.error.ErrorCode;
 import lombok.Builder;
