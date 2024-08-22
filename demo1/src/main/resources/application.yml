@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${DB_URL}:${DB_PORT}/${DB_NAME}
+    url: ${DB_URL}
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
@@ -14,3 +14,17 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+  jwt:
+    secret-key: ${SECRET_KEY}
+    header: ${HEADER}
+    prefix: ${PREFIX}
+    access-exp: ${ACCESS_EXP}
+    refresh-exp: ${REFRESH_EXP}
+
+  main:
+    allow-bean-definition-overriding: true
+
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    serialization:
+      fail-on-empty-beans: false
